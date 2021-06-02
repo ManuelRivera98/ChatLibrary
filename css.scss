@@ -1,0 +1,36 @@
+@import "../../../general";
+.chat-container {
+  width: 100%;
+  border: 1px solid #9f9f9f;
+  border-radius: 5px;
+  overflow: hidden;
+  .chat-header {
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    background: $white;
+    .chat-iconContainer {
+      @include flex-center;
+      padding: 10px 11px;
+      border-radius: 50%;
+      background: $gray2;
+      overflow: hidden;
+      i {
+        color: $color2;
+      }
+    }
+    .chat-username {
+      padding-left: 15px;
+      font-weight: 100;
+      font-size: 1.1em;
+    }
+  }
+  .chat-chatContainer {
+    height: 450px;
+    background: #f7f7f7;
+    .chat-loader-container {
+      padding-top: 150px;
+    }
+  }
+}
